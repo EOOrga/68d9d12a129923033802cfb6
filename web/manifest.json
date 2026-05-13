@@ -1,0 +1,33 @@
+{
+  "name": "PELLETIER ROGER",
+  "short_name": "PELLETIER",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F4F7FA",
+  "theme_color": "#25344B",
+  "description": "Local operations control for equipment, work orders, compliance, and containers.",
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

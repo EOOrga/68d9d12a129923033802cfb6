@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25344B">
+  <title>PELLETIER ROGER</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --navy: #25344b;
+      --blue: #2b3d58;
+      --gold: #c79a49;
+      --green: #2e7d62;
+      --ink: #17202d;
+      --muted: #5f6c7b;
+      --line: #dce4ee;
+      --paper: #f4f7fa;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    nav,
+    section,
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      color: #dbe7f3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      width: 100%;
+      min-height: 560px;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(37, 52, 75, 0.94), rgba(37, 52, 75, 0.56)),
+        url("featured.png") center / cover no-repeat;
+    }
+
+    .hero-content {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 96px 0 78px;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 22px 0 30px;
+      color: #eef4f9;
+      font-size: 19px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: #1b160d;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.13);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+    }
+
+    section {
+      padding: 54px 0;
+    }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      letter-spacing: 0;
+      color: var(--navy);
+    }
+
+    .section-title p,
+    .feature p,
+    .workflow p,
+    footer p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature,
+    .workflow {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .feature strong,
+    .workflow strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .privacy-band {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    footer {
+      padding: 34px 0 44px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 820px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .grid,
+      .workflow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <img src="favicon.png" alt="">
+        <span>PELLETIER ROGER</span>
+      </div>
+      <div class="nav-links" aria-label="Sections">
+        <a href="#features">Operations</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>PELLETIER ROGER</h1>
+        <p>Android operations control for equipment checkout, compliance reporting, work orders, and container tracking.</p>
+        <div class="button-row">
+          <a class="button" href="mailto:support@pelletierroger.com">Contact support</a>
+          <a class="button secondary" href="#features">View workflows</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="section-title">
+        <h2>Daily business tasks in one local app</h2>
+        <p>The Android app is built for repeated operational checks, quick handoffs, and clear status visibility.</p>
+      </div>
+      <div class="grid">
+        <div class="feature">
+          <strong>Equipment checkout</strong>
+          <p>Assign equipment to an operator, site, due time, and handoff notes.</p>
+        </div>
+        <div class="feature">
+          <strong>Work orders</strong>
+          <p>Create and close maintenance tasks with area and priority tracking.</p>
+        </div>
+        <div class="feature">
+          <strong>Compliance reports</strong>
+          <p>Record checklist results, findings, and resolution status.</p>
+        </div>
+        <div class="feature">
+          <strong>Container tracking</strong>
+          <p>Track container ID, seal, route, ETA, and next movement state.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="privacy-band" id="workflow">
+      <section>
+        <div class="section-title">
+          <h2>Built for local operations</h2>
+          <p>The dashboard highlights active checkouts, open work, moving containers, and compliance actions so supervisors can keep the day moving.</p>
+        </div>
+        <div class="workflow-grid">
+          <div class="workflow">
+            <strong>Fast handoffs</strong>
+            <p>Teams can tap into each record, update status, and keep the next step visible without searching through paper logs.</p>
+          </div>
+          <div class="workflow">
+            <strong>Device-only data</strong>
+            <p>Records and preferences stay in local Android app storage. The app does not use accounts, network services, analytics, or advertising identifiers.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="privacy">
+      <div class="section-title">
+        <h2>Privacy-first by design</h2>
+        <p>PELLETIER ROGER stores operational records locally and does not request Android permissions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>PELLETIER ROGER</strong>
+    <p>support@pelletierroger.com</p>
+  </footer>
+</body>
+</html>
