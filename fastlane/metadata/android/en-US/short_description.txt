@@ -1,0 +1,1 @@
+Manage local equipment, work orders, compliance reports, and containers.
