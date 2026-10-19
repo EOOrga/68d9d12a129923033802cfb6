@@ -1,0 +1,3 @@
+PELLETIER ROGER helps operations teams keep daily yard and warehouse tasks organized on one Android phone. Staff can record equipment checkouts, create work orders, log compliance reports, and track container status without needing an account or network access.
+
+The dashboard highlights active checkouts, open maintenance tasks, moving containers, and compliance items so supervisors can focus on the next handoff. Each record stays on the device and can be updated as work progresses.

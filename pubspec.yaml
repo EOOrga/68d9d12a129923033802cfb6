@@ -1,4 +1,4 @@
-name: pelletier_roger_ops
+name: officials
 description: "Operations workflows for PELLETIER ROGER teams."
 publish_to: 'none'
 version: 1.0.0+1
@@ -24,6 +24,6 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: "docs/icon.png"
-  adaptive_icon_background: "#25344B"
-  adaptive_icon_foreground: "docs/icon.png"
+  adaptive_icon_background: "#208BFE"
+  adaptive_icon_foreground: docs/icon.png
   min_sdk_android: 23

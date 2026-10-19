@@ -36,7 +36,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.pelletierroger.pelletier_roger_ops"
+        applicationId = "com.pelletier.officials"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
